@@ -1,23 +1,18 @@
-@font-face {
-  font-family: "Avenir";
-  font-weight: 400;
-  font-style: normal;
-  src: url("/avenir-400.woff2") format("woff2");
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Sora:wght@100;300;600;800&display=swap');
 
 body {
-  font-family: "Avenir", Tahoma, Arial, Helvetica, sans-serif;
+  font-family: "sora", Arial, Helvetica, sans-serif;
   font-size: 1em;
+  font-style: normal;
   line-height: 1.65;
   color: #373F49;
-  background: #eee;
+  background: rgb(255, 255, 255);
   margin: 0;
 }
 
 img {
   display: block;
-  width: 100%;
+  width: 100% ;
 }
 
 h1,
@@ -30,11 +25,14 @@ h3 {
 a {
   color: currentColor;
 }
+a:hover{
+  color: rgb(141, 121, 255);
+}
 
 .wrapper {
-  width: calc(100% - 10vmin);
+  width: 100%;
   margin: 0 auto;
-  padding: 5vmin 0;
+
 }
 
 /**
@@ -42,7 +40,7 @@ a {
  */
 .article-list {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -53,7 +51,7 @@ a {
  *
  */
 .section-headline {
-  padding: 0 0 0.4em 0;
+  padding: 0 0 0 0;
   margin: 0 0 5vmin 0;
   border-bottom: 1px solid #ddd;
 }
