@@ -9,11 +9,7 @@ export default ({ data }) => (
       className={styles.heroImage}
       alt={data.name}
       fluid={data.heroImage.fluid}
+      href="https://en.wikipedia.org/wiki/Em_(typography)"
     />
-    <div className={styles.heroDetails}>
-      <h3 className={styles.heroHeadline}>{data.name}</h3>
-      <p className={styles.heroTitle}>{data.title}</p>
-      <p>{data.shortBio.shortBio}</p>
-    </div>
   </div>
 )

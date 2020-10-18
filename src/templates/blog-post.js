@@ -16,9 +16,9 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location}>
         <div style={{ background: '#fff' }}>
           <Helmet title={`${post.title} | ${siteTitle}`} />
-          <div className={heroStyles.hero}>
+          <div className={heroStyles.heroBlog}>
             <Img
-              className={heroStyles.heroImage}
+              className={heroStyles.heroImageblog}
               alt={post.title}
               fluid={post.heroImage.fluid}
             />

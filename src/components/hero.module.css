@@ -1,8 +1,18 @@
 .hero {
   position: relative;
-  background: #000;
+  background: rgb(255, 255, 255);
   color: #fff;
-  text-align: center;
+  text-align: left;
+  height: auto;
+}
+
+.heroBlog {
+  position: relative;
+  background: rgb(185, 133, 133);
+  color: #fff;
+  text-align: left;
+  height: 80vh;
+
 }
 
 .heroImage {
@@ -10,18 +20,28 @@
     Ensure golden ratio for the hero size while limiting it to some extend to
     the viewport width
   */
-  height: 61.8vh;
-  max-height: 400px;
+  height: auto;
+
 }
+
+
+.heroImageblog {
+  /*
+    Ensure golden ratio for the hero size while limiting it to some extend to
+    the viewport width
+  */
+  height: 80vh;
+
+}
+
 
 .heroDetails {
   position: absolute;
-  background: rgba(0, 0, 0, 0.7);
-  left: 50%;
+  background: rgba(170, 170, 170);
   bottom: 0;
-  transform: translate(-50%, 0);
   font-size: 14px;
   padding: 0 0.5em;
+  width: 77vh;
 }
 
 @media(min-width: 600px) {
